@@ -6,7 +6,7 @@ Este proyecto implementa tres algoritmos de ordenación diferentes (Bubble Sort,
 
 La lista de libros se representa como un arreglo de objetos, donde cada objeto contiene el título del libro, el año de publicación y el número de reservas.
 
-
+```javascript
 const libros = [
   { titulo: "Algoritmos Avanzados", año: 2018, reservas: 120 },
   { titulo: "Introducción a JavaScript", año: 2020, reservas: 90 },
@@ -46,7 +46,7 @@ console.timeEnd('Bubble Sort por Año');
 console.log(librosOrdenados);
 
 
-# Insertion:
+# ORDENAMINETO DE INSERTION:
 
 
 Código:
