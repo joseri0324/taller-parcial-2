@@ -1,10 +1,10 @@
-# Proyecto de Ordenación de Libros
+# DOCUMETACION DEL CODIGO.
 
 Este proyecto implementa tres algoritmos de ordenación diferentes (Bubble Sort, Insertion Sort y Selection Sort) para ordenar una lista de libros basada en diferentes criterios (año de publicación, número de reservas y título).
 
-## Lista de Libros
+## Lista de Libros.
 
-La lista de libros se representa como un arreglo de objetos, donde cada objeto contiene el título del libro, el año de publicación y el número de reservas.
+se representa como un arreglo de objetos, donde cada objeto contiene el título del libro, el año de publicación y el número de reservas.
 
 
 const libros = [
