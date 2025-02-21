@@ -6,16 +6,17 @@ Este proyecto implementa tres algoritmos de ordenación diferentes (Bubble Sort,
 
 se representa como un arreglo de objetos, donde cada objeto contiene el título del libro, el año de publicación y el número de reservas.
 
-
+````javascript
 const libros = [
   { titulo: "Algoritmos Avanzados", año: 2018, reservas: 120 },
   { titulo: "Introducción a JavaScript", año: 2020, reservas: 90 },
   { titulo: "Estructuras de Datos", año: 2015, reservas: 60 },
   { titulo: "Sistemas Operativos", año: 2019, reservas: 110 }
 ];
-
+````
 ## Bubble Sort
 
+````javascript
 const bubbleSort = (array, key) => {
   let swapped;
   for (let i = array.length - 1; i > 0; i--) { 
@@ -30,7 +31,7 @@ const bubbleSort = (array, key) => {
   }
   return array;
 };
-
+````
 - Se declara una variable swapped para llevar el registro de si se realizaron intercambios durante la iteración.
 
 - Se realiza un bucle externo que recorre la lista de atrás hacia adelante.
@@ -40,18 +41,20 @@ const bubbleSort = (array, key) => {
 - Si no se realizaron intercambios (swapped es false), el bucle se rompe para optimizar el rendimiento.
 
 - La función devuelve el arreglo ordenado.
-
+  
+````javascript
 console.time('Bubble Sort por Año');
 const librosOrdenados = bubbleSort(libros, 'año');
 console.timeEnd('Bubble Sort por Año');
 console.log(librosOrdenados);
-
+````
 
 # ORDENAMINETO DE INSERTION:
 
 
+
 Código:
-´´´javascript
+````javascript
 const insertionSort = (array, key) => {
   for (let i = 1; i < array.length; i++) {
     let current = array[i];
@@ -64,7 +67,7 @@ const insertionSort = (array, key) => {
   }
   return array;
 };
-´´´
+````
 
 - Se guarda el elemento actual en la variable current.
 
@@ -77,14 +80,16 @@ const insertionSort = (array, key) => {
 
 Para ordenar los libros por el número de reservas utilizando Insertion Sort, se mide el tiempo de ejecución con console.time y console.timeEnd.
 
+````javascript
 console.time('Insertion Sort por Reservas');
 const librosOrdenadosreservas = insertionSort(libros1, 'reservas');
 console.timeEnd('Insertion Sort por Reservas');
 console.log(librosOrdenadosreservas);
-
+````
 
 # ORDENAMIENTO DE SELECCION: 
 
+````javascript
 Código:
 javascript
 function selectionSort(arr, key) {
@@ -102,7 +107,7 @@ function selectionSort(arr, key) {
   }
   return arr;
 }
-
+````
 
 Se busca el elemento mínimo en la sublista no ordenada.
 
