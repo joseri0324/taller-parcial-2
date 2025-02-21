@@ -51,7 +51,7 @@ console.log(librosOrdenados);
 
 
 Código:
-javascript
+´´´javascript
 const insertionSort = (array, key) => {
   for (let i = 1; i < array.length; i++) {
     let current = array[i];
@@ -64,7 +64,7 @@ const insertionSort = (array, key) => {
   }
   return array;
 };
-
+´´´
 
 - Se guarda el elemento actual en la variable current.
 
